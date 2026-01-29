@@ -5,7 +5,7 @@ print("1 is voor Coördinanten berekenen")
 print("2 is voor pytaghoras")
 Keuze = input("wat wil je berekenen ")
 
-if Keuze == "1" or Keuze == "1":
+if Keuze == "1":
  print("welkom bij de discriminant rekenaar ")
  A = float(input("wat is jouw A "))
  B = float(input("wat is jouw B "))
@@ -13,10 +13,10 @@ if Keuze == "1" or Keuze == "1":
  D = B ** 2 - 4 * A * C
  print(str(D) + " Dit is jouw discrimannt")
  if D >= 0:
-   X1 = ((-B + math.sqrt(D)) / 2)*A
+   X1 = ((-B + math.sqrt(D)) / (2*A))
    print("Hier is jouw X1 " + str(X1))
    if D > 0:
-     X2 = ((-B - math.sqrt(D)) / 2)*A
+     X2 = ((-B - math.sqrt(D)) / (2*A))
      print("Hier is jouw X2 " + str(X2))
    Y1 = (A * X1 ** 2) + B * X1 + C
    Y2 = (A * X2 ** 2) + B * X2 + C
@@ -30,7 +30,7 @@ if Keuze == "1" or Keuze == "1":
    print("Geen X want D < 0")
    exit = input(type)
 
-if Keuze == "2" or Keuze == "2":
+if Keuze == "2":
  Zijde = input("Kies jouw zijde die je wilt berekenen A,B,C (1,2,3)")
 
  if Zijde == "C" or Zijde == "c" or Zijde == "3":
